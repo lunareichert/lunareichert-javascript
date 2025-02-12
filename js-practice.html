@@ -16,41 +16,50 @@
     let x = 5;
     console.log (x);
 
-    let y =3;
+    let y = 3;
     console.log(y);
 
     let z = x * y;
-    console.log (z);
+    console.log(z);
 
     // Math on my own 
 
-    let a = x + y;
-    console.log (a);
+    let a = 8;
+    console.log(a);
 
-    let b = x - y;
-    console.log(b);
+    let b = 2; 
+    console.log(b); 
 
-    let c = x/y;
-    console.log(c); 
+    let c = a + b;
+    console.log(c);
+
+    let d = a - b;
+    console.log(d);
+
+    let e = a / b;
+    console.log(e); 
     
     console.log ("Working with strings:");
-    let firstName = 'Luna' 
-    let middleName = 'Walker'
-    let lastName = 'Reichert.'
+
+    let firstName = "Luna";
+    let middleName = "Walker";
+    let lastName = "Reichert";
 
     let name = firstName + " " + middleName + " " + lastName; 
     console.log (name);
 
-    //Strings on my own
+    // Strings on my own
 
-    let greeting = 'My name is '
-    console.log (greeting + name);
+    let greeting = "My name is" + " " + name + ".";
+    console.log (greeting);
 
     console.log ("Using functions:");
-    // function to make square numbers
+
+    // Function to make square numbers
+
     function makeSquare(theNumb) {
-    let squared = theNumb * theNumb;
-    return squared;
+      let squared = theNumb * theNumb;
+      return squared;
     } 
 
     let try01 = makeSquare (3);
@@ -64,40 +73,40 @@
 
     // Functions on my own
     function makeName (firstName, middleName, lastName) {
-    let name = firstName + " " + middleName + " " + lastName;
-    return name;
+      let name = firstName + " " + middleName + " " + lastName;
+      return name;
     } 
 
-    let name01 = makeName("Luna", "Walker" , "Reichert")
+    let name01 = makeName("Luna", "Walker" , "Reichert");
     console.log (name01);
 
-    let name02 = makeName("Robert", "\"Beto\"", "O'Rourke")
+    let name02 = makeName("Robert", "\"Beto\"", "O'Rourke");
     console.log (name02);
 
-    let name03 = makeName("Adaline", "Nicole", "Hess")
+    let name03 = makeName("Adaline", "Nicole", "Hess");
     console.log (name03);
 
     console.log ("Making better name function:");
     function makeBetterName (firstName, middleName, lastName) {
-    if (middleName .length === 1) {
-      middleName = middleName + ".";
-    }
-    let fullName = firstName + " " + middleName + " " + lastName;
-    return fullName;
+      if (middleName .length === 1) {
+        middleName = middleName + ".";
+      }
+      let fullName = firstName + " " + middleName + " " + lastName;
+      return fullName;
     }
 
     console.log(makeBetterName ("Joan", "Marie", "Larkin"));
     console.log (makeBetterName ("John", "F", "Kennedy"));
     console.log (makeBetterName ("John", "W", "Reichert"));
 
-    console.log("scoreCompare function");
+    console.log("scoreCompare function:");
     function scoreCompare (home, away) {
-    if (home>away) {
-      return "Home team wins!";
+      if (home>away) {
+        return "Home team wins!";
       } else if (home === away) {
-      return "It was a tie";
+        return "It was a tie";
       } else {
-      return "Away team wins! :(";
+        return "Away team wins! :(";
       }
     }
 
