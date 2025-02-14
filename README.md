@@ -1,4 +1,4 @@
-# Luna's Javscript practice
+# Luna's Javascript practice
 
 By Luna Reichert, Intro Coding for Journalists class
 
